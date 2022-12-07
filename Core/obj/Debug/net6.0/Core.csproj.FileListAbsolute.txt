@@ -1,0 +1,15 @@
+C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\Core\bin\Debug\net6.0\Core.deps.json
+C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\Core\bin\Debug\net6.0\Core.dll
+C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\Core\bin\Debug\net6.0\Core.pdb
+C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\Core\bin\Debug\net6.0\SharedComponents.dll
+C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\Core\bin\Debug\net6.0\SharedComponents.pdb
+C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\Core\obj\Debug\net6.0\Core.csproj.AssemblyReference.cache
+C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\Core\obj\Debug\net6.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\Core\obj\Debug\net6.0\Core.AssemblyInfoInputs.cache
+C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\Core\obj\Debug\net6.0\Core.AssemblyInfo.cs
+C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\Core\obj\Debug\net6.0\Core.csproj.CoreCompileInputs.cache
+C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\Core\obj\Debug\net6.0\Core.csproj.CopyComplete
+C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\Core\obj\Debug\net6.0\Core.dll
+C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\Core\obj\Debug\net6.0\refint\Core.dll
+C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\Core\obj\Debug\net6.0\Core.pdb
+C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\Core\obj\Debug\net6.0\ref\Core.dll
