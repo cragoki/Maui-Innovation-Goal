@@ -19,6 +19,16 @@ builder.Services.Configure<ConfigurationModel>(
     builder.Configuration.GetSection("Jwt")
 );
 
+//Register the self hosting API
+//var config = new HttpSelfHostConfiguration("http://localhost:8080"); //TODO: take this from appsettings.js
+//config.Routes.MapHttpRoute(
+//    "API Default", "api/{controller}/{id}", 
+//    new { id = RouteParameter.Optional });
+
+//using (HttpSelfHostServer server = new HttpSelfHostServer(config))
+//{
+//    server.OpenAsync().Wait();
+//}
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
 {
@@ -56,8 +66,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-app.MapGet("/security/getMessage",
-() => "Hello World!").RequireAuthorization();
+
+
 app.UseHttpsRedirection();
 
 app.UseAuthentication();

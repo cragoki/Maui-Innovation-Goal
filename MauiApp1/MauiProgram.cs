@@ -57,7 +57,8 @@ public static class MauiProgram
         mauiAppBuilder.Services.AddSingleton<IPollingStationService, PollingStationService>();
 
         //Clients
-        mauiAppBuilder.Services.AddSingleton<IPollingStationClient, PollingStationClient>();
+        mauiAppBuilder.Services.AddScoped<IPollingStationClient, PollingStationClient>();
+        mauiAppBuilder.Services.AddScoped<IAuthClient, AuthClient>();
 
         //Context
         mauiAppBuilder.Services.AddScoped<ILocalMauiContext, LocalMauiContext>();

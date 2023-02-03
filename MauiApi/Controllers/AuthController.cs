@@ -22,7 +22,7 @@ namespace MauiApi.Controllers
             _userRepository = userRepository;
         }
 
-        [HttpGet("Login")]
+        [HttpPost("Login")]
         public IActionResult Login(LoginRequestModel request)
         {
             try

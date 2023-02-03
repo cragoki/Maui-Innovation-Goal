@@ -6,80 +6,32 @@ using MauiApp1.Services.Interfaces;
 using SharedComponents.Model;
 using MauiApp1.Data.Repositories.Intefaces;
 using MauiApp1.Data.Entities;
+using MauiApp1.Clients.Interfaces;
 
 namespace MauiApp1.Services
 {
     public class AuthService : IAuthService
     {
-        HttpClient _client;
-        JsonSerializerOptions _serializerOptions;
+        private IAuthClient _client;
         private ITokenRepository _tokenRepository;
         private IUserRepository _userRepository;
 
-        public AuthService(ITokenRepository tokenRepository, IUserRepository userRepository)
+        public AuthService(ITokenRepository tokenRepository, IUserRepository userRepository, IAuthClient client)
         {
-            _client = new HttpClient();
-            _serializerOptions = new JsonSerializerOptions
-            {
-                PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
-                WriteIndented = true
-            };
-
             _tokenRepository = tokenRepository;
             _userRepository = userRepository;
+            _client = client;
         }
 
         public async Task<LoginResponseModel> Login(LoginRequestModel requestModel)
         {
             var result = new LoginResponseModel();
-            Uri uri = new Uri(string.Format(Constants.Constants.ApiUrl + "Auth/Login"));
 
             try
             {
-                var request = new HttpRequestMessage
-                {
-                    Method = HttpMethod.Get,
-                    RequestUri = uri,
-                    Content = new StringContent(JsonSerializer.Serialize(requestModel), Encoding.UTF8),
-                };
-
-                HttpResponseMessage response = new HttpResponseMessage()
-                {
-                    StatusCode = System.Net.HttpStatusCode.OK
-                };//Mocking this so I dont have to run the API
-
-                    //await _client.GetAsync(uri);
-
-                if (response.IsSuccessStatusCode)
-                {
-                    //string content = await response.Content.ReadAsStringAsync();
-                    //result = JsonSerializer.Deserialize<LoginResponseModel>(content, _serializerOptions);
-                    result = new LoginResponseModel()
-                    {
-                        Token = new TokenModel() 
-                        {
-                            UserId = 1,
-                            AuthToken = "testToken",
-                            RefreshToken = "testRefreshToken",
-                            TokenExpiry = DateTime.Now.AddHours(1)
-                        },
-                        User = new UserModel() 
-                        {
-                            Id = 1,
-                            Email = "TestEmail",
-                            FirstName = "Test",
-                            LastName = "Test",
-                            PermissionLevel = Enums.UserPermissionLevel.admin
-                        }
-                    };
-
-                    CheckExistingUser(result);
-                    CheckToken(result);
-                }
-                else
-                {
-                    throw new Exception("Invalid Username or Password");
-                }
+                result = await _client.LoginRequest(requestModel);
+                CheckExistingUser(result);
+                CheckToken(result);
             }
             catch (Exception ex)
             {
