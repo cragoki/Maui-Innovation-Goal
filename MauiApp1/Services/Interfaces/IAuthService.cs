@@ -8,5 +8,6 @@ namespace MauiApp1.Services.Interfaces
         Task<LoginResponseModel> Login(LoginRequestModel requestModel);
         void CheckExistingUser(LoginResponseModel model);
         void CheckToken(LoginResponseModel model);
+        void ClearLocalData();
     }
 }

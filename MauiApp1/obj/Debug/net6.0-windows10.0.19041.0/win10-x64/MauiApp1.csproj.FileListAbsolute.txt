@@ -6,6 +6,7 @@ C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1\bin\Debug\n
 C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\MauiApp1.pdb
 C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\resources.pri
 C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml
+C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\CommunityToolkit.Mvvm.dll
 C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Configuration.dll
 C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Configuration.Abstractions.dll
 C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.DependencyInjection.dll
@@ -15,8 +16,10 @@ C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1\bin\Debug\n
 C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Options.dll
 C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Primitives.dll
 C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Microsoft.Graphics.Canvas.Interop.dll
+C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Microsoft.Maui.Controls.Maps.dll
 C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Microsoft.Maui.Graphics.dll
 C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll
+C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Microsoft.Maui.Maps.dll
 C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Microsoft.InteractiveExperiences.Projection.dll
 C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Microsoft.WinUI.dll
 C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.AppLifecycle.Projection.dll
@@ -351,6 +354,14 @@ C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1\obj\Debug\n
 C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
-C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\CommunityToolkit.Mvvm.dll
-C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Microsoft.Maui.Controls.Maps.dll
-C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Microsoft.Maui.Maps.dll
+C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Microsoft.Data.Sqlite.dll
+C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Microsoft.EntityFrameworkCore.dll
+C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\MauiApp1.Data.dll
+C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\MauiApp1.Data.pdb

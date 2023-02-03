@@ -1,5 +1,8 @@
-﻿using MauiApp1.Repositories;
-using MauiApp1.Repositories.Interfaces;
+﻿using MauiApp1.Clients;
+using MauiApp1.Clients.Interfaces;
+using MauiApp1.Data;
+using MauiApp1.Data.Repositories;
+using MauiApp1.Data.Repositories.Intefaces;
 using MauiApp1.Services;
 using MauiApp1.Services.Interfaces;
 using MauiApp1.ViewModels;
@@ -22,19 +25,22 @@ public static class MauiProgram
 
         builder.UseMauiMaps();
         //Pages
-        builder.Services.AddSingleton<MainPage>();
+        builder.Services.AddSingleton<LoginPage>();
         builder.Services.AddSingleton<MapPage>();
-
-        //ViewModels
-        builder.Services.AddSingleton<LoginViewModel>();
-        builder.Services.AddSingleton<MapViewModel>();
+        builder.Services.AddSingleton<HomePage>();
+        builder.Services.AddSingleton<ViewRoundPage>();
+        builder.Services.AddSingleton<VisitStationPage>();
 
         return builder.Build();
     }
 
     public static MauiAppBuilder RegisterViewModels(this MauiAppBuilder mauiAppBuilder)
     {
-        mauiAppBuilder.Services.AddSingleton<ViewModels.LoginViewModel>();
+        mauiAppBuilder.Services.AddSingleton<LoginViewModel>();
+        mauiAppBuilder.Services.AddSingleton<MapViewModel>();
+        mauiAppBuilder.Services.AddSingleton<HomeViewModel>();
+        mauiAppBuilder.Services.AddSingleton<ViewRoundViewModel>();
+        mauiAppBuilder.Services.AddSingleton<MainLayoutViewModel>();
 
         return mauiAppBuilder;
     }
@@ -44,8 +50,17 @@ public static class MauiProgram
         //Repositories
         mauiAppBuilder.Services.AddSingleton<ITokenRepository, TokenRepository>();
         mauiAppBuilder.Services.AddSingleton<IUserRepository, UserRepository>();
+        mauiAppBuilder.Services.AddSingleton<IPollingStationRepository, PollingStationRepository>();
+
         //Services
         mauiAppBuilder.Services.AddSingleton<IAuthService, AuthService>();
+        mauiAppBuilder.Services.AddSingleton<IPollingStationService, PollingStationService>();
+
+        //Clients
+        mauiAppBuilder.Services.AddSingleton<IPollingStationClient, PollingStationClient>();
+
+        //Context
+        mauiAppBuilder.Services.AddScoped<ILocalMauiContext, LocalMauiContext>();
 
         return mauiAppBuilder;
     }

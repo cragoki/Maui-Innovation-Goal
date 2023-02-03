@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.LoginPage"
+             xmlns:viewmodel="clr-namespace:MauiApp1.ViewModels"
+             x:DataType="viewmodel:LoginViewModel" 
+             Shell.FlyoutBehavior="Disabled">
+    <!--xmlns = XML NAMESPACE-->
+    <!--xmlns = XML NAMESPACE-->
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            Margin="20"
+            VerticalOptions="Center">
+
+            <Image
+                Source="dc_logo.png"
+                SemanticProperties.Description="DC Logo"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Log In"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+            
+            <Border Stroke="#black"
+                StrokeThickness="1"
+                StrokeShape="RoundRectangle 20,20,20,20"
+                Padding="16,8"
+                HorizontalOptions="Center">
+                <Entry
+                    x:Name="Email"
+                    MaxLength="200"
+                    Text="{Binding Email}"            
+                    WidthRequest="200"
+                    Placeholder="Email" />
+                </Border>
+            <Border Stroke="#black"
+                StrokeThickness="1"
+                StrokeShape="RoundRectangle 20,20,20,20"
+                Padding="16,8"
+                HorizontalOptions="Center">
+                <Entry
+                    x:Name="Password"
+                    MaxLength="200"
+                    WidthRequest="200"
+                    
+                    IsPassword="True"
+                    Text="{Binding Password}"
+                    Placeholder="Password"/>
+            </Border>
+
+            <Label x:Name="LoginValidationMessage" Text="{Binding LoginValidationMessage}" TextColor="Red" HorizontalTextAlignment="Center" />
+            <Button
+                x:Name="LoginBtn"
+                Text="Log In"
+                SemanticProperties.Hint="Logs user in"
+                Command="{Binding LoginCommand}"
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "pQfU9BvYg1bNXhYjQITcIyeRUDCVoLlkyutaalU7VOQpKgXiAqZusQmbKYnKWaqW2UmNFfdpeJD2cbXhb3toBg==",
+  "success": false,
+  "projectFilePath": "C:\\Users\\Test\\Documents\\Admin\\Training\\Maui-Innovation-Goal\\AuthTest\\UnitTests.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project MauiApp1 is not compatible with net6.0 (.NETCoreApp,Version=v6.0). Project MauiApp1 supports:\r\n  - net6.0-android31.0 (.NETCoreApp,Version=v6.0)\r\n  - net6.0-ios16.0 (.NETCoreApp,Version=v6.0)\r\n  - net6.0-maccatalyst15.4 (.NETCoreApp,Version=v6.0)\r\n  - net6.0-windows10.0.19041 (.NETCoreApp,Version=v6.0)",
+      "libraryId": "MauiApp1",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}

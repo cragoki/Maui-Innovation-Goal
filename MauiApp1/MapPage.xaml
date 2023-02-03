@@ -5,6 +5,6 @@
              x:Class="MauiApp1.MapPage"
              Title="MapPage">
     <VerticalStackLayout>
-        <maps:Map x:Name="map" />
+        
     </VerticalStackLayout>
 </ContentPage>

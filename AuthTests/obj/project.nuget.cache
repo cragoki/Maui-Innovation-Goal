@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "LvBjsN/7UrxmSbHowDtnBH3Ac7P4Rfr/VEewONyKsFhgPL7uyDPoOP1ietAnsgdOSbGfYjV+QNB5hk5AlMG/ug==",
+  "success": false,
+  "projectFilePath": "C:\\Users\\Test\\Documents\\Admin\\Training\\Maui-Innovation-Goal\\AuthTests\\AuthTests.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1105",
+      "level": "Error",
+      "message": "Unable to read project information for 'AuthTests': Invalid framework identifier ''."
+    }
+  ]
+}

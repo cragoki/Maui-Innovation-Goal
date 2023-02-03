@@ -1,13 +1,14 @@
-﻿using MauiApp1.Repositories;
+﻿using MauiApp1.Shared;
 
 namespace MauiApp1;
 
 public partial class App : Application
 {
     public App()
-	{
-		InitializeComponent();
+    {
+        InitializeComponent();
 
-		MainPage = new AppShell();
+        //WE WILL WANT TO CHECK IF USER IS LOGGED IN TO DETERMINE THE MAIN PAGE
+        MainPage = new MainLayout();
     }
 }

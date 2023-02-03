@@ -1,0 +1,17 @@
+C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1.Data\obj\Debug\net6.0\MauiApp1.Data.csproj.AssemblyReference.cache
+C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1.Data\obj\Debug\net6.0\MauiApp1.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1.Data\obj\Debug\net6.0\MauiApp1.Data.AssemblyInfoInputs.cache
+C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1.Data\obj\Debug\net6.0\MauiApp1.Data.AssemblyInfo.cs
+C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1.Data\obj\Debug\net6.0\MauiApp1.Data.csproj.CoreCompileInputs.cache
+C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1.Data\bin\Debug\net6.0\MauiApp1.Data.deps.json
+C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1.Data\bin\Debug\net6.0\MauiApp1.Data.runtimeconfig.json
+C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1.Data\bin\Debug\net6.0\MauiApp1.Data.dll
+C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1.Data\bin\Debug\net6.0\MauiApp1.Data.pdb
+C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1.Data\bin\Debug\net6.0\SharedComponents.dll
+C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1.Data\bin\Debug\net6.0\SharedComponents.pdb
+C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1.Data\obj\Debug\net6.0\MauiApp1.Data.csproj.CopyComplete
+C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1.Data\obj\Debug\net6.0\MauiApp1.Data.dll
+C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1.Data\obj\Debug\net6.0\refint\MauiApp1.Data.dll
+C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1.Data\obj\Debug\net6.0\MauiApp1.Data.pdb
+C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1.Data\obj\Debug\net6.0\MauiApp1.Data.genruntimeconfig.cache
+C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1.Data\obj\Debug\net6.0\ref\MauiApp1.Data.dll

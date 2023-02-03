@@ -12,7 +12,10 @@
         public bool IsOpen { get; set; }
 
         //Coordinates
-        public string Lat { get; set; }
-        public string Lng { get; set; }
+        public double Lat { get; set; }
+        public double Lng { get; set; }
+        public DateTime? LastVisit { get; set; }
+        public int VisitCount { get; set; }
+
     }
 }

@@ -3,9 +3,9 @@ using SharedComponents.Model.Response;
 using System.Text.Json;
 using System.Text;
 using MauiApp1.Services.Interfaces;
-using MauiApp1.Repositories.Interfaces;
-using MauiApp1.Entities;
 using SharedComponents.Model;
+using MauiApp1.Data.Repositories.Intefaces;
+using MauiApp1.Data.Entities;
 
 namespace MauiApp1.Services
 {
@@ -122,6 +122,11 @@ namespace MauiApp1.Services
                 RefreshToken = model.Token.RefreshToken,
                 TokenExpiry = model.Token.TokenExpiry
             });
+        }
+
+        public void ClearLocalData() 
+        {
+            _userRepository.ClearLocalData();
         }
     }
 }

@@ -3,12 +3,10 @@ using CommunityToolkit.Mvvm.Input;
 using MauiApp1.Services;
 using MauiApp1.Services.Interfaces;
 using SharedComponents.Model.Request;
-using System.ComponentModel;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace MauiApp1.ViewModels
 {
-    public partial class LoginViewModel : ObservableObject //Automatically gives us the OnPropertyChanged function commented out below
+    public partial class LoginViewModel : BaseViewModel //Automatically gives us the OnPropertyChanged function commented out below
     {
 
         private IAuthService _authService;
@@ -70,7 +68,7 @@ namespace MauiApp1.ViewModels
                     });
 
                     //Redirect to Homepage
-                    await Shell.Current.GoToAsync(nameof(MapPage));
+                    await Shell.Current.GoToAsync(nameof(HomePage));
                 }
                 catch (Exception ex)
                 {
