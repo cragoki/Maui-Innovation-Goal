@@ -275,3 +275,4 @@ C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1\obj\Debug\n
 C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1\obj\Debug\net6.0-maccatalyst\maccatalyst-x64\MauiApp1.pdb
 C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1\obj\Debug\net6.0-maccatalyst\maccatalyst-x64\MauiApp1.genruntimeconfig.cache
 C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1\obj\Debug\net6.0-maccatalyst\maccatalyst-x64\ref\MauiApp1.dll
+C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1\bin\Debug\net6.0-maccatalyst\maccatalyst-x64\Newtonsoft.Json.dll

@@ -29,6 +29,7 @@ public class MonoPackageManager_Resources {
 		"Microsoft.Maui.Controls.Maps.dll",
 		"Microsoft.Maui.Graphics.dll",
 		"Microsoft.Maui.Maps.dll",
+		"Newtonsoft.Json.dll",
 		"SQLite-net.dll",
 		"SQLitePCLRaw.batteries_v2.dll",
 		"SQLitePCLRaw.nativelibrary.dll",

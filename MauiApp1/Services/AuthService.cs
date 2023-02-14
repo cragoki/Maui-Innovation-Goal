@@ -30,6 +30,10 @@ namespace MauiApp1.Services
             try
             {
                 result = await _client.LoginRequest(requestModel);
+                if (result == null || result.User == null || result.Token == null) 
+                {
+                    throw new Exception("Error communicating with external server");
+                }
                 CheckExistingUser(result);
                 CheckToken(result);
             }

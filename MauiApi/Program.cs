@@ -1,9 +1,13 @@
+using Core.Interfaces;
+using Infrastructure.Config.IoC;
 using Infrastructure.Data;
+using Infrastructure.Repositorys;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using SharedComponents.Model;
 using Stashbox;
+using System.ComponentModel;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -29,6 +33,18 @@ builder.Services.Configure<ConfigurationModel>(
 //{
 //    server.OpenAsync().Wait();
 //}
+builder.Host.UseStashbox();
+builder.Host.ConfigureContainer<IStashboxContainer>((context, container) =>
+{
+    container.AddDependencies(context.Configuration);
+});
+
+builder.Host.ConfigureServices((hostContext, services) =>
+{
+    services.AddDbContextPool<MauiContext>(option =>
+        option.UseSqlServer(hostContext.Configuration.GetConnectionString("DefaultConnection"),
+        sqlServerOptions => sqlServerOptions.CommandTimeout(120)).EnableSensitiveDataLogging());
+});
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
 {
@@ -42,20 +58,6 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
         ValidIssuer = builder.Configuration["Jwt:Issuer"],
         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
     };
-});
-
-builder.Host.ConfigureServices((hostContext, services) =>
-{
-    services.AddDbContextPool<MauiContext>(option =>
-        option.UseSqlServer(hostContext.Configuration.GetConnectionString("DefaultConnection"),
-        sqlServerOptions => sqlServerOptions.CommandTimeout(120)).EnableSensitiveDataLogging());
-});
-
-
-builder.Host.UseStashbox();
-builder.Host.ConfigureContainer<IStashboxContainer>((hostContext, services) =>
-{
-
 });
 
 var app = builder.Build();

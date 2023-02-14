@@ -1,4 +1,5 @@
 ﻿using Core.Interfaces;
+using Infrastructure.Data;
 using Infrastructure.Repositorys;
 using Microsoft.Extensions.Configuration;
 using Stashbox;
@@ -21,6 +22,7 @@ namespace Infrastructure.Config.IoC
             // Repository
             container.RegisterScoped<IUserRepository, UserRepository>();
             container.RegisterScoped<IPollingStationRepository, PollingStationRepository>();
+            container.RegisterScoped<IMauiContext, MauiContext>();
 
             container.RegisterSettings(configuration);
             container.RegisterServices();

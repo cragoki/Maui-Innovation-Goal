@@ -1,7 +1,8 @@
 ﻿using MauiApp1.Clients.Interfaces;
+using Newtonsoft.Json;
 using SharedComponents.Model.Request;
 using SharedComponents.Model.Response;
-using System.Net;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Text.Json;
 
@@ -17,7 +18,6 @@ namespace MauiApp1.Clients
             _client = new HttpClient();
             _serializerOptions = new JsonSerializerOptions
             {
-                PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
                 WriteIndented = true
             };
         }
@@ -27,9 +27,16 @@ namespace MauiApp1.Clients
             var result = new LoginResponseModel();
             try
             {
-                Uri uri = new Uri(string.Format(Constants.Constants.ApiUrl + "Auth/Login"));   
+                Uri uri = new Uri(string.Format(Constants.Constants.ApiUrl + "Auth/Login"));
 
-                var response = await _client.PostAsync(uri, new StringContent(JsonSerializer.Serialize(requestModel), Encoding.UTF8));
+
+                var request = new HttpRequestMessage(HttpMethod.Post, uri);
+                var content = JsonConvert.SerializeObject(requestModel);
+                var buffer = Encoding.UTF8.GetBytes(content);
+                var byteContent = new ByteArrayContent(buffer);
+                byteContent.Headers.ContentType = new MediaTypeHeaderValue("application/json");
+                request.Content = byteContent;
+                var response = await _client.SendAsync(request);
 
                 if (!response.IsSuccessStatusCode) 
                 {
@@ -38,8 +45,8 @@ namespace MauiApp1.Clients
 
                 if (response.IsSuccessStatusCode)
                 {
-                    string content = await response.Content.ReadAsStringAsync();
-                    result = JsonSerializer.Deserialize<LoginResponseModel>(content, _serializerOptions);
+                    var jsonContent = await response.Content.ReadAsStringAsync();
+                    result =  JsonConvert.DeserializeObject<LoginResponseModel>(jsonContent);
                 }
             }
             catch (Exception ex)

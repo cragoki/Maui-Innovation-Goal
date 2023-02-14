@@ -14,8 +14,8 @@ namespace MauiApi.Controllers
     [ApiController]
     public class AuthController : ControllerBase
     {
-        private IConfiguration _configuration;
-        private IUserRepository _userRepository;
+        private static IConfiguration _configuration;
+        private static IUserRepository _userRepository;
         public AuthController(IConfiguration config, IUserRepository userRepository)
         {
             _configuration = config;
