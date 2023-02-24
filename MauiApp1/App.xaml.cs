@@ -1,6 +1,4 @@
-﻿using MauiApp1.Shared;
-
-namespace MauiApp1;
+﻿namespace MauiApp1;
 
 public partial class App : Application
 {
@@ -9,6 +7,6 @@ public partial class App : Application
         InitializeComponent();
 
         //WE WILL WANT TO CHECK IF USER IS LOGGED IN TO DETERMINE THE MAIN PAGE
-        MainPage = new MainLayout();
+        MainPage = new AppShell();
     }
 }

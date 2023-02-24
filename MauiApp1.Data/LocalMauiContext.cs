@@ -1,6 +1,7 @@
 ﻿namespace MauiApp1.Data
 {
     using MauiApp1.Data.Entities;
+    using MauiApp1.Enums;
     using Microsoft.EntityFrameworkCore;
     using System;
 
@@ -23,5 +24,13 @@
         // special "local" folder for your platform.
         protected override void OnConfiguring(DbContextOptionsBuilder options)
             => options.UseSqlite($"Data Source={DbPath}");
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<User>()
+                    .Property(s => s.PermissionLevel)
+                    .HasDefaultValue(UserPermissionLevel.regular)
+                    .IsRequired();
+        }
     }
 }

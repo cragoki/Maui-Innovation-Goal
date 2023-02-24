@@ -1,8 +1,6 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
-using CommunityToolkit.Mvvm.Input;
+﻿using CommunityToolkit.Mvvm.Input;
 using MauiApp1.Models.Navigation;
 using System.Collections.ObjectModel;
-using System.Windows.Input;
 
 namespace MauiApp1.ViewModels
 {
@@ -20,7 +18,7 @@ namespace MauiApp1.ViewModels
 
         [RelayCommand]
         public async Task NavigateTo(NavItem navItem)
-        {        
+        {
             await Shell.Current.GoToAsync(navItem.Page);
         }
     }

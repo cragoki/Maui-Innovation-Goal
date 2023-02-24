@@ -2,7 +2,7 @@
 {
     public enum UserPermissionLevel
     {
-        regular,
-        admin
+        admin,
+        regular
     }
 }

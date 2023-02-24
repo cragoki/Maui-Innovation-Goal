@@ -65,8 +65,8 @@
 	  <Compile Update="LoginPage.xaml.cs">
 	    <DependentUpon>LoginPage.xaml</DependentUpon>
 	  </Compile>
-	  <Compile Update="Shared\MainLayout.xaml.cs">
-	    <DependentUpon>MainLayout.xaml</DependentUpon>
+	  <Compile Update="Shared\AppShell.xaml.cs">
+	    <DependentUpon>AppShell.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 

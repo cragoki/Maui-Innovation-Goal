@@ -2,6 +2,7 @@
 using CommunityToolkit.Mvvm.Input;
 using MauiApp1.Services;
 using MauiApp1.Services.Interfaces;
+using MauiApp1.ValueConverters;
 using SharedComponents.Model.Request;
 
 namespace MauiApp1.ViewModels
@@ -22,6 +23,9 @@ namespace MauiApp1.ViewModels
         string password;
         [ObservableProperty]
         string loginValidationMessage;
+
+        [ObservableProperty]
+        IntToBool intToBool = new IntToBool();
         //public string Email
         //{
         //    get => email;

@@ -25,6 +25,9 @@
         <member name="P:MauiApp1.ViewModels.LoginViewModel.LoginValidationMessage">
             <inheritdoc cref="F:MauiApp1.ViewModels.LoginViewModel.loginValidationMessage"/>
         </member>
+        <member name="P:MauiApp1.ViewModels.LoginViewModel.IntToBool">
+            <inheritdoc cref="F:MauiApp1.ViewModels.LoginViewModel.intToBool"/>
+        </member>
         <member name="F:MauiApp1.ViewModels.LoginViewModel.loginCommand">
             <summary>The backing field for <see cref="P:MauiApp1.ViewModels.LoginViewModel.LoginCommand"/>.</summary>
         </member>

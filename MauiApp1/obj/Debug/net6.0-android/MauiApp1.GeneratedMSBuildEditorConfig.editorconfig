@@ -45,11 +45,11 @@ build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.Resources.Styles.
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
-[C:/Users/Test/Documents/Admin/Training/Maui-Innovation-Goal/MauiApp1/Shared/MainLayout.xaml]
+[C:/Users/Test/Documents/Admin/Training/Maui-Innovation-Goal/MauiApp1/Shared/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.Shared.MainLayout.xaml
-build_metadata.AdditionalFiles.TargetPath = Shared\MainLayout.xaml
-build_metadata.AdditionalFiles.RelativePath = Shared\MainLayout.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.Shared.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = Shared\AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = Shared\AppShell.xaml
 
 [C:/Users/Test/Documents/Admin/Training/Maui-Innovation-Goal/MauiApp1/Shared/NavigationFlyoutPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
