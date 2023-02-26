@@ -15,7 +15,7 @@
         public double Lat { get; set; }
         public double Lng { get; set; }
         public DateTime? LastVisit { get; set; }
-        public int VisitCount { get; set; }
+        public int? VisitCount { get; set; }
 
     }
 }

@@ -18,6 +18,7 @@ namespace MauiApp1.Data.Repositories
             try
             {
                 _context.Token.Add(token);
+                _context.SaveChangesAsync();
             }
             catch (Exception ex)
             {
@@ -30,6 +31,7 @@ namespace MauiApp1.Data.Repositories
             try
             {
                 _context.Token.Remove(token);
+                _context.SaveChangesAsync();
             }
             catch (Exception ex)
             {

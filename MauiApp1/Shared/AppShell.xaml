@@ -11,6 +11,7 @@
     <FlyoutItem FlyoutDisplayOptions="AsMultipleItems" Shell.TabBarIsVisible="False">
         <ShellContent Title="Home" ContentTemplate="{DataTemplate local:HomePage}"  Route="HomePage" />
         <ShellContent Title="Map" ContentTemplate="{DataTemplate local:MapPage}"  Route="MapPage" />
+        <ShellContent Title="View Rounds" ContentTemplate="{DataTemplate local:ViewRoundPage}"  Route="ViewRoundPage" />
     </FlyoutItem>
 
 

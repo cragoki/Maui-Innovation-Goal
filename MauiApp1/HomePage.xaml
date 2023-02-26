@@ -5,41 +5,51 @@
              BackgroundColor="#252525"
              xmlns:model="clr-namespace:MauiApp1.Models.Navigation"
              xmlns:viewmodel="clr-namespace:MauiApp1.ViewModels"
-             x:DataType="viewmodel:HomeViewModel">
-    <Grid
+             x:DataType="viewmodel:HomeViewModel"
+             Title="Home Page">
+    <VerticalStackLayout>
+        <Label Grid.Column="1"
+                                        Text="Test"
+                                        FontAttributes="Bold" 
+                                        TextColor="#000"
+                                        FontSize="Header"
+                                        HorizontalOptions="Center">
+        </Label>
+        <Grid
         ColumnDefinitions="*,*"
         ColumnSpacing="5"
         RowDefinitions="*,Auto"
         RowSpacing="0">
-        <CollectionView
+            <CollectionView
             Grid.ColumnSpan="2"
             ItemsSource="{Binding NavItems}"
             SelectionMode="None">
-            <CollectionView.ItemTemplate>
-                <DataTemplate x:DataType="model:NavItem">
-                    <Grid Padding="10">
-                        <Frame HeightRequest="125" Style="{StaticResource CardView}">
-                            <Frame.GestureRecognizers>
-                                <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:HomeViewModel}}, Path=NavigateToCommand}" CommandParameter="{Binding .}"></TapGestureRecognizer>
-                            </Frame.GestureRecognizers>
-                            <Grid Padding="0" ColumnDefinitions="125,*">
-                                <VerticalStackLayout
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="model:NavItem">
+                        <Grid Padding="10">
+                            <Frame HeightRequest="125" Style="{StaticResource CardView}">
+                                <!--<Frame.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:HomeViewModel}}, Path=NavigateToCommand}" CommandParameter="{Binding .}"></TapGestureRecognizer>
+                                </Frame.GestureRecognizers>-->
+                                <Grid Padding="0" ColumnDefinitions="125,*">
+                                    <VerticalStackLayout
                                     VerticalOptions="Center"
                                     Grid.Column="1"
                                     Padding="10">
-                                    <Label Grid.Column="1"
+                                        <Label Grid.Column="1"
                                         Text="{Binding Name}"
                                         FontAttributes="Bold" 
                                         TextColor="#000"
                                         FontSize="Header"
                                         HorizontalOptions="Center">
-                                    </Label>
-                                </VerticalStackLayout>
-                            </Grid>
-                        </Frame>
-                    </Grid>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
-    </Grid>
+                                        </Label>
+                                    </VerticalStackLayout>
+                                </Grid>
+                            </Frame>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Grid>
+    </VerticalStackLayout>
 </ContentPage>

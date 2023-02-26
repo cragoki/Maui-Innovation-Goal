@@ -51,12 +51,6 @@ build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.Shared.AppShell.x
 build_metadata.AdditionalFiles.TargetPath = Shared\AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = Shared\AppShell.xaml
 
-[C:/Users/Test/Documents/Admin/Training/Maui-Innovation-Goal/MauiApp1/Shared/NavigationFlyoutPage.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.Shared.NavigationFlyoutPage.xaml
-build_metadata.AdditionalFiles.TargetPath = Shared\NavigationFlyoutPage.xaml
-build_metadata.AdditionalFiles.RelativePath = Shared\NavigationFlyoutPage.xaml
-
 [C:/Users/Test/Documents/Admin/Training/Maui-Innovation-Goal/MauiApp1/ViewRoundPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.ViewRoundPage.xaml

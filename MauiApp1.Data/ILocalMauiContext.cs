@@ -9,5 +9,6 @@ namespace MauiApp1.Data
         DbSet<PollingStation> PollingStation { get; set; }
         DbSet<Token> Token { get; set; }
         DbSet<User> User { get; set; }
+        Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
     }
 }

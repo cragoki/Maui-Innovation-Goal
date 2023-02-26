@@ -13,7 +13,7 @@ namespace MauiApp1.Models.PollingStation
         public string Address { get; set; }
         public string TravelTime { get; set; }
         public int JourneyDistanceMiles { get; set; }
-        public int VisitCount { get; set; }
+        public int? VisitCount { get; set; }
         public DateTime? LastVisitTime { get; set; }
     }
 }

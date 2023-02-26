@@ -58,7 +58,8 @@ namespace MauiApp1.Services
                     Email = model.User.Email,
                     FirstName = model.User.FirstName,
                     LastName = model.User.LastName,
-                    PermissionLevel = model.User.PermissionLevel
+                    PermissionLevel = model.User.PermissionLevel,
+                    IsActiveUser = true
                 });
             }
         }

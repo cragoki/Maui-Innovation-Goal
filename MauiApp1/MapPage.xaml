@@ -5,6 +5,12 @@
              x:Class="MauiApp1.MapPage"
              Title="MapPage">
     <VerticalStackLayout>
-        
+        <Label Grid.Column="1"
+                                        Text="Test"
+                                        FontAttributes="Bold" 
+                                        TextColor="#000"
+                                        FontSize="Header"
+                                        HorizontalOptions="Center">
+        </Label>
     </VerticalStackLayout>
 </ContentPage>

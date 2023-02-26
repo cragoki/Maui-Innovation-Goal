@@ -32,5 +32,11 @@
                     .HasDefaultValue(UserPermissionLevel.regular)
                     .IsRequired();
         }
+
+        public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
+        {
+            var result = await base.SaveChangesAsync(true, cancellationToken);
+            return result;
+        }
     }
 }

@@ -26,15 +26,13 @@ namespace MauiApp1.ViewModels
                 //        $"Please check internet and try again.", "OK");
                 //    return;
                 //}
+                if (PollingStations.Count() == 0)
+                {
+                    var stations = await _pollingStationService.GetStationModel();
 
-                var stations = await _pollingStationService.GetStationModel();
-
-                if (PollingStations.Count != 0)
-                    PollingStations.Clear();
-
-                foreach (var station in stations)
-                    PollingStations.Add(station);
-
+                    foreach (var station in stations)
+                        PollingStations.Add(station);
+                }
             }
             catch (Exception ex)
             {

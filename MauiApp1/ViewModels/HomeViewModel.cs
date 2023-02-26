@@ -16,10 +16,10 @@ namespace MauiApp1.ViewModels
         };
 
 
-        [RelayCommand]
-        public async Task NavigateTo(NavItem navItem)
-        {
-            await Shell.Current.GoToAsync(navItem.Page);
-        }
+        //[RelayCommand]
+        //public async Task NavigateTo(NavItem navItem)
+        //{
+        //    await Shell.Current.GoToAsync(navItem.Page);
+        //}
     }
 }

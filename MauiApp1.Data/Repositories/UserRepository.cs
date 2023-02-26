@@ -18,6 +18,7 @@ namespace MauiApp1.Data.Repositories
             try
             {
                 _context.User.Add(user);
+                _context.SaveChangesAsync();
             }
             catch (Exception ex)
             {
@@ -30,6 +31,7 @@ namespace MauiApp1.Data.Repositories
             try
             {
                 _context.User.Remove(user);
+                _context.SaveChangesAsync();
             }
             catch (Exception ex)
             {
@@ -67,6 +69,7 @@ namespace MauiApp1.Data.Repositories
                 }
 
                 _context.User.Update(entity);
+                _context.SaveChangesAsync();
                 result = entity;
             }
             catch (Exception ex)

@@ -10,12 +10,6 @@
         <member name="P:MauiApp1.ViewModels.BaseViewModel.Title">
             <inheritdoc cref="F:MauiApp1.ViewModels.BaseViewModel._title"/>
         </member>
-        <member name="F:MauiApp1.ViewModels.HomeViewModel.navigateToCommand">
-            <summary>The backing field for <see cref="P:MauiApp1.ViewModels.HomeViewModel.NavigateToCommand"/>.</summary>
-        </member>
-        <member name="P:MauiApp1.ViewModels.HomeViewModel.NavigateToCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:MauiApp1.ViewModels.HomeViewModel.NavigateTo(MauiApp1.Models.Navigation.NavItem)"/>.</summary>
-        </member>
         <member name="P:MauiApp1.ViewModels.LoginViewModel.Email">
             <inheritdoc cref="F:MauiApp1.ViewModels.LoginViewModel.email"/>
         </member>

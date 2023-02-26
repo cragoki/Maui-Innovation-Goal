@@ -8,6 +8,6 @@ namespace MauiApp1.Data.Entities
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public UserPermissionLevel PermissionLevel { get; set; }
-
+        public bool IsActiveUser { get; set; }
     }
 }

@@ -77,9 +77,6 @@
 	  <MauiXaml Update="MapPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Shared\NavigationFlyoutPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
 	  <MauiXaml Update="ViewRoundPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

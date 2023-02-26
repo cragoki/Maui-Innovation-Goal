@@ -21,6 +21,7 @@ C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1\bin\Debug\n
 C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1\bin\Debug\net6.0-ios\iossimulator-x64\Microsoft.Maui.Controls.Maps.dll
 C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1\bin\Debug\net6.0-ios\iossimulator-x64\Microsoft.Maui.Graphics.dll
 C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1\bin\Debug\net6.0-ios\iossimulator-x64\Microsoft.Maui.Maps.dll
+C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1\bin\Debug\net6.0-ios\iossimulator-x64\Newtonsoft.Json.dll
 C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1\bin\Debug\net6.0-ios\iossimulator-x64\SQLite-net.dll
 C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1\bin\Debug\net6.0-ios\iossimulator-x64\SQLitePCLRaw.batteries_v2.dll
 C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1\bin\Debug\net6.0-ios\iossimulator-x64\SQLitePCLRaw.nativelibrary.dll
@@ -285,4 +286,3 @@ C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1\obj\Debug\n
 C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1\obj\Debug\net6.0-ios\iossimulator-x64\MauiApp1.pdb
 C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1\obj\Debug\net6.0-ios\iossimulator-x64\MauiApp1.genruntimeconfig.cache
 C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1\obj\Debug\net6.0-ios\iossimulator-x64\ref\MauiApp1.dll
-C:\Users\Test\Documents\Admin\Training\Maui-Innovation-Goal\MauiApp1\bin\Debug\net6.0-ios\iossimulator-x64\Newtonsoft.Json.dll

@@ -49,15 +49,16 @@ namespace Infrastructure.Migrations
                     b.Property<bool>("IsOpen")
                         .HasColumnType("bit");
 
-                    b.Property<string>("Lat")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<DateTime?>("LastVisit")
+                        .HasColumnType("datetime2");
 
-                    b.Property<string>("Lng")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<double>("Lat")
+                        .HasColumnType("float");
 
-                    b.Property<int>("MySqlId")
+                    b.Property<double>("Lng")
+                        .HasColumnType("float");
+
+                    b.Property<int?>("MySqlId")
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
@@ -67,6 +68,9 @@ namespace Infrastructure.Migrations
                     b.Property<string>("PostCode")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("VisitCount")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -84,7 +88,7 @@ namespace Infrastructure.Migrations
                     b.Property<DateTime>("Date")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("MySqlId")
+                    b.Property<int?>("MySqlId")
                         .HasColumnType("int");
 
                     b.Property<string>("Photo")
@@ -121,7 +125,7 @@ namespace Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("MySqlId")
+                    b.Property<int?>("MySqlId")
                         .HasColumnType("int");
 
                     b.Property<string>("Password")
@@ -150,7 +154,7 @@ namespace Infrastructure.Migrations
                     b.Property<bool>("DisabledAccess")
                         .HasColumnType("bit");
 
-                    b.Property<int>("MySqlId")
+                    b.Property<int?>("MySqlId")
                         .HasColumnType("int");
 
                     b.Property<string>("Notes")

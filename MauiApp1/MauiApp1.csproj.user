@@ -20,9 +20,6 @@
     <MauiXaml Update="MapPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Shared\NavigationFlyoutPage.xaml">
-      <SubType>Designer</SubType>
-    </MauiXaml>
     <MauiXaml Update="ViewRoundPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

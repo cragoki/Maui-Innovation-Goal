@@ -3,6 +3,6 @@
     public class BaseEntity
     {
         public int Id { get; set; }
-        public int MySqlId { get; set; }
+        public int? MySqlId { get; set; }
     }
 }

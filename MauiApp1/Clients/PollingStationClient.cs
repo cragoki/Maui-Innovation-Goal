@@ -1,4 +1,5 @@
 ﻿using MauiApp1.Clients.Interfaces;
+using MauiApp1.Data.Repositories.Intefaces;
 using SharedComponents.Model;
 using System.Text.Json;
 
@@ -8,8 +9,10 @@ namespace MauiApp1.Clients
     {
         HttpClient _client;
         JsonSerializerOptions _serializerOptions;
+        private ITokenRepository _tokenRepository;
+        private IUserRepository _userRepository;
 
-        public PollingStationClient()
+        public PollingStationClient(ITokenRepository tokenRepository, IUserRepository userRepository)
         {
             _client = new HttpClient();
             _serializerOptions = new JsonSerializerOptions
@@ -17,6 +20,8 @@ namespace MauiApp1.Clients
                 PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
                 WriteIndented = true
             };
+            _tokenRepository = tokenRepository;
+            _userRepository = userRepository;
         }
 
         public async Task<List<PollingStationModel>> GetStations()
@@ -29,57 +34,21 @@ namespace MauiApp1.Clients
                 var request = new HttpRequestMessage
                 {
                     Method = HttpMethod.Get,
-                    RequestUri = uri,
+                    RequestUri = uri
                 };
 
-                HttpResponseMessage response = new HttpResponseMessage()
-                {
-                    StatusCode = System.Net.HttpStatusCode.OK
-                };//Mocking this so I dont have to run the API
+                //Need to implement a Base Client to register this
+                var user = _userRepository.Get().Where(x => x.IsActiveUser).FirstOrDefault();
+                var token = _tokenRepository.Get().Where(x => x.Id == user.Id).FirstOrDefault();
 
-                //await _client.GetAsync(uri);
+                _client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token.AuthToken);
+
+                var response = await _client.GetAsync(uri);
 
                 if (response.IsSuccessStatusCode)
                 {
-                    //string content = await response.Content.ReadAsStringAsync();
-                    //result = JsonSerializer.Deserialize<List<PollingStationModel>>(content, _serializerOptions);
-                    result = new List<PollingStationModel>()
-                    {
-                        new PollingStationModel()
-                        {
-                            Id = 1,
-                            Name = "ALDI",
-                            AddressLine1 = "Dalston Rd",
-                            AddressLine2 = "Carlisle",
-                            PostCode = "CA2 5NP",
-                            IsOpen = false,
-                            Lat = 54.89084059407141,
-                            Lng = -2.9474876212618604
-                        },
-                        new PollingStationModel()
-                        {
-                            Id = 2,
-                            Name = "Greggs",
-                            AddressLine1 = "131, 133 Denton St",
-                            AddressLine2 = "Carlisle",
-                            PostCode = "CA2 5EN",
-                            IsOpen = false,
-                            Lat = 54.887039362019635,
-                            Lng = -2.9402778435305073
-                        },
-                        new PollingStationModel()
-                        {
-                            Id = 3,
-                            Name = "McDonald's",
-                            AddressLine1 = "Kingstown",
-                            AddressLine2 = "Grearshill Rd",
-                            AddressLine3 = "Carlisle",
-                            PostCode = "CA3 0ET",
-                            IsOpen = false,
-                            Lat = 54.92715769008813,
-                            Lng = -2.947976488792807
-                        }
-                    };
+                    string content = await response.Content.ReadAsStringAsync();
+                    result = JsonSerializer.Deserialize<List<PollingStationModel>>(content, _serializerOptions);
                 }
                 else
                 {
